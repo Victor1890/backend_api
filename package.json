@@ -1,0 +1,48 @@
+{
+  "name": "backend",
+  "version": "0.0.1",
+  "description": "backend for frontend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.js --exec babel-node",
+    "build": "babel src --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+hhttps://github.com/Victor1890/backend_FutrProyect.git"
+  },
+  "keywords": [
+    "node",
+    "backend",
+    "express",
+    "js",
+    "bd",
+    "mongodb"
+  ],
+  "author": "Victor Rosario <victorrosariodeveloper@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Victor1890/backend_FutrProyect/issues"
+  },
+  "homepage": "https://github.com/Victor1890/backend_FutrProyect#readme",
+  "devDependencies": {
+    "@babel/cli": "7.13.14",
+    "@babel/core": "7.13.15",
+    "@babel/node": "7.13.13",
+    "@babel/plugin-transform-runtime": "^7.13.15",
+    "@babel/preset-env": "7.13.15",
+    "dotenv": "8.2.0",
+    "nodemon": "2.0.7"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@babel/runtime": "^7.13.10",
+    "bcryptjs": "2.4.3",
+    "cors": "2.8.5",
+    "express": "4.17.1",
+    "helmet": "4.4.1",
+    "mongoose": "5.12.3",
+    "morgan": "1.10.0"
+  }
+}
