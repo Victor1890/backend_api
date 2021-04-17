@@ -8,6 +8,9 @@
     "dev": "nodemon src/index.js --exec babel-node",
     "build": "babel src --out-dir dist"
   },
+  "engines": {
+    "node": "14.16.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+hhttps://github.com/Victor1890/backend_FutrProyect.git"
