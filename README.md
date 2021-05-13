@@ -5,50 +5,38 @@
 
 It is necessary to have software or settings already preset on your PC.
 
-## Technologies
+### Technologies
 
 * [Node and NPM](https://nodejs.org/en/)
 * [MongoDB](https://www.mongodb.com/)
 * [ExpressJs](https://expressjs.com/)
 * [VS Code](https://code.visualstudio.com/)
 
-```bash
-git clone https://gitlab.com/Victor1890/proyect-test-php-laravel.git
-```
+### Clone project
 
 ```bash
-cd proyect-test-php-laravel
+git clone https://github.com/Victor1890/backend_api.git backend_api_furtProject
 ```
-
-En los archivos que aparecen en la carpera `resources/views` deben editar los archivos `orders.blade.php` y `select.blade.php` para así poder editar las vistas.
 
 ```bash
-cd resources/views
+cd backend_api_furtProject
 ```
 
-## Routes ó Rutas
-
-Usando VSCode, open the files `web.php` para agregar o editar las rutas,
-
-```php
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('orders', function(){
-    return view('orders');
-});
-Route::get('orders/selected', function(){
-    return view('select');
-});
+```bash
+npm install && npm run dev
 ```
 
-## Screenshot
+## Routes
 
-![img](design/img1.png)
+Using VSCode, open the files `src/routers/products.routes.js` to be able to edit or add new functionalities.
 
-![img](design/img2.png)
-
-![img](design/img3.png)
+```js
+router.post("/", productCtrls.createProducts);
+router.get("/", productCtrls.getProducts);
+router.get("/:id", productCtrls.getProductById);
+router.put("/:id", productCtrls.updateProductById);
+router.delete("/:id", productCtrls.deleteProductById);
+```
 
 ## License
 
